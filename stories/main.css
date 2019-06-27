@@ -1,0 +1,96 @@
+:root {
+  --color-white: #ffffff;
+  --card-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  --color-black: #333333;
+  --color-gray: #a39e9e;
+  --color-light-gray: #f1f3f5;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../static/OpenSans.eot');
+  src: url('../static/OpenSans.eot?#iefix') format('embedded-opentype'),
+    url('../static/OpenSans.woff2') format('woff2'),
+    url('../static/OpenSans.woff') format('woff'),
+    url('../static/OpenSans.ttf') format('truetype'),
+    url('../static/OpenSans.svg#OpenSans') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Container */
+.container {
+  padding: 0 15px;
+}
+
+/* Card */
+.card {
+  cursor: pointer;
+  border-radius: 2px;
+  position: relative;
+  background-color: var(--color-white);
+  box-shadow: var(--card-shadow);
+  display: block;
+  margin-bottom: 7px;
+  margin: 10px;
+  padding: 16px;
+  width: 20%;
+}
+
+.card:hover {
+  background-color: var(--color-light-gray);
+}
+
+/* Card thumbnail */
+.thumbnail {
+  padding: 8px;
+}
+
+.thumbnail__img {
+  display: block;
+  width: 100%;
+}
+
+/* Card title */
+.card__title {
+  color: var(--color-black);
+  font-size: 12px;
+  line-height: 15px;
+  margin: 6px auto;
+}
+
+.card__stars {
+  display: flex;
+  margin: 7px 0 15px;
+}
+
+.star {
+  width: 15px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user__avatar-img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.user__name {
+  color: var(--color-gray);
+  font-size: 10px;
+  line-height: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 6px;
+}
