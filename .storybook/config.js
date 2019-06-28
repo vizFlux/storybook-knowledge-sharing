@@ -59,7 +59,11 @@ function loadStories() {
 }
 
 addParameters({
-  backgrounds: [{ name: 'default', value: '#fafafa', default: true }],
+  backgrounds: [
+    { name: 'default', value: '#fafafa', default: true },
+    { name: 'dark', value: '#333333' },
+    { name: 'light', value: '#ffffff' },
+  ],
   viewport: { viewports: viewports },
 });
 
